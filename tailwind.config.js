@@ -27,6 +27,11 @@ module.exports = {
         'bg-grey': '#F8F8F8',
 
       },
+      screens: {
+        'ipad_mini': '744px',
+        'ipad_pro': '1024px',
+        'desktop': '1440px'
+      },
     },
   },
   plugins: [
