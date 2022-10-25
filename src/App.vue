@@ -1,5 +1,6 @@
 <template>
   <nav>
+
     <h4 class="text-xl">
       <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
       menu (dans <code class="font-mono">/src/App.vue</code>)
@@ -21,5 +22,5 @@
 </template>
 
 <script setup lang="ts">
-import { Bars3Icon } from "@heroicons/vue/20/solid";
+
 </script>
