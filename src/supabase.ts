@@ -8,8 +8,9 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 //declare global {
 //  var supabase: SupabaseClient;
-//}
+//
 // Pour tester dans la console, dé-commenter la ligne qui suit :
+// @ts-ignore
 globalThis.supabase = supabase;
 
 export const user = ref(supabase.auth.user());
