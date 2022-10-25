@@ -1,7 +1,6 @@
 <template>
   <nav>
-
-    <h4 class="text-xl">
+    <h4 class="text-xl font-reemkufi text-dark-black">
       <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
       menu (dans <code class="font-mono">/src/App.vue</code>)
     </h4>

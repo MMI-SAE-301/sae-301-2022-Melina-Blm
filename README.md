@@ -4,7 +4,7 @@
 - **Prénom : Mélina 
 - **URL maquette Figma: https://www.figma.com/file/4DgGs65jvmczltXB4wiTDC/sae301-maquette-melina-bouchelleghem?node-id=1%3A3
 - **URL publique du site :**
-- **URL projet Supabase :**
+- **URL projet Supabase : https://rimwowxryvwavdahhzcm.supabase.co
   - [X] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
 # Auto-évaluation
