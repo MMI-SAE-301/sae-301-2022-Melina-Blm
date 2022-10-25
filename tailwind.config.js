@@ -4,12 +4,6 @@ const formKitTailwind = require("@formkit/themes/tailwindcss");
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    colors: {
-      'dark-black': '#1F1F1F',
-      'grey-dust': '#7E7E7E',
-      'light-dark': '#2F2F2F',
-
-    },
     extend: {
       fontFamily: {
         'raleway': ['Raleway', 'sans-serif'],
@@ -25,7 +19,14 @@ module.exports = {
         '50s': '3.125rem',
 
 
-      }
+      },
+      colors: {
+        'dark-black': '#1F1F1F',
+        'grey-dust': '#7E7E7E',
+        'light-dark': '#2F2F2F',
+        'bg-grey': '#F8F8F8',
+
+      },
     },
   },
   plugins: [
