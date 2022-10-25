@@ -1,5 +1,9 @@
 <template>
   <nav>
+    <h1 class="text-3xl p-3 font-reemkufi text-dark-black">Tik Tak</h1>
+    <router-link class="" to="/"> Customize Your Pair</router-link>
+    <br>
+
     <h4 class="text-xl font-reemkufi text-dark-black">
       <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
       menu (dans <code class="font-mono">/src/App.vue</code>)

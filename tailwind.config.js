@@ -13,6 +13,16 @@ module.exports = {
       fontFamily: {
         'raleway': ['Raleway', 'sans-serif'],
         'reemkufi': ['Reem Kufi']
+      },
+      fontSize: {
+        '24s': '1.5rem',
+        '80s': '5rem',
+        '35s': '2.188rem',
+        '70s': '4.375rem',
+        '40s': '2.5rem',
+
+
+
       }
     },
   },
