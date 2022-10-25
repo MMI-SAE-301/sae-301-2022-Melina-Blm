@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-around">
+    <div class="flex items-center justify-around flex-wrap">
 
         <h1 class="text-3xl p-3 font-reemkufi text-35s text-light-dark">tik tak</h1>
         <div class=" ">
