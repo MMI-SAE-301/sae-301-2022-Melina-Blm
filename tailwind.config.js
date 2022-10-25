@@ -7,12 +7,14 @@ module.exports = {
     colors: {
       'dark-black': '#1F1F1F',
       'grey-dust': '#7E7E7E',
+      'light-dark': '#2F2F2F',
 
     },
     extend: {
       fontFamily: {
         'raleway': ['Raleway', 'sans-serif'],
-        'reemkufi': ['Reem Kufi']
+        'reemkufi': ['Reem Kufi'],
+        'outfit': ['Outfit']
       },
       fontSize: {
         '24s': '1.5rem',
@@ -20,7 +22,7 @@ module.exports = {
         '35s': '2.188rem',
         '70s': '4.375rem',
         '40s': '2.5rem',
-
+        '50s': '3.125rem',
 
 
       }

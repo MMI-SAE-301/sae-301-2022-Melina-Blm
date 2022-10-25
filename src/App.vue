@@ -1,7 +1,6 @@
 <template>
   <nav>
-    <h1 class="text-3xl p-3 font-reemkufi text-dark-black">Tik Tak</h1>
-    <router-link class="" to="/"> Customize Your Pair</router-link>
+    <MenuTikTak />
     <br>
 
     <h4 class="text-xl font-reemkufi text-dark-black">
@@ -25,5 +24,7 @@
 </template>
 
 <script setup lang="ts">
+
+import MenuTikTak from './components/Menu.vue'
 
 </script>

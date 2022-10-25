@@ -1,4 +1,22 @@
 <template>
+    <div class="flex items-center justify-around">
+
+        <h1 class="text-3xl p-3 font-reemkufi text-35s text-light-dark">tik tak</h1>
+        <div class=" ">
+            <router-link class=" text-base font-outfit hover:font-semibold text-light-dark font-medium mr-20" to="/">
+                Customize
+                Your Pair
+            </router-link>
+            <router-link class="  hover:font-semibold text-base font-outfit text-light-dark font-medium mr-20" to="/">
+                About
+            </router-link>
+            <router-link class="hover:font-semibold text-base font-outfit text-light-dark font-medium mr-20" to="/">
+                Collections</router-link>
+            <router-link class="hover:font-semibold text-base font-outfit text-light-dark font-medium mr-20" to="/">
+                Sign In</router-link>
+        </div>
+        <router-link class=" " to="/"> <img class="w-9" src="images/icon_profil.png" alt=""></router-link>
+    </div>
 
 </template>
 <style scoped>
