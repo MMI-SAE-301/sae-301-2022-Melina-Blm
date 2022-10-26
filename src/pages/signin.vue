@@ -30,27 +30,29 @@ const nvlUtilisateur = ref(false);
             <section class=" text-center bg-white w-96 p-10 rounded-xl shadow-lg mb-20">
                 <div class="flex flex-col space-y-4">
 
-                    <h3 class="font-reemkufi font-medium text-center text-dark-black p-5 text-lg ">
+                    <h3 v-if="!user" class="font-reemkufi font-medium text-center text-dark-black p-5 text-lg ">
                         CONNEXION /
                         INSCRIPTION</h3>
-                    <input class="rounded-xl text-grey-dust border-zinc-200 " type="email" placeholder="E-mail..." />
-                    <input class="rounded-xl text-grey-dust border-zinc-200" type="password"
+                    <p v-if="user">Vous êtes authentifié au nom de {{ user.user_metadata.full_name }}.</p>
+                    <input v-if="!user" class="rounded-xl text-grey-dust border-zinc-200 " type="email"
+                        placeholder="E-mail..." />
+                    <input v-if="!user" class="rounded-xl text-grey-dust border-zinc-200" type="password"
                         placeholder="Mot de passe" />
-                    <button @pointerdown="supabase.auth.signIn({ provider: 'google' })"
+                    <button v-if="!user" @pointerdown="supabase.auth.signIn({ provider: 'google' })"
                         class="text-dark-black bg-zinc-200 hover:bg-zinc-300  p-2 rounded-2xl">Continuer
                         avec
                         Google</button>
-                    <button @pointerdown="supabase.auth.signIn({ provider: 'facebook' })"
+                    <button v-if="!user" @pointerdown="supabase.auth.signIn({ provider: 'facebook' })"
                         class="text-white  bg-blue-600 hover:bg-blue-700 p-2 rounded-2xl">Continuer
                         avec
                         Facebook</button>
 
                     <div class="flex justify-center">
                         <div class="space-x-3">
-                            <button class="bg-zinc-800 p-2 px-6 text-white rounded-lg">Se
+                            <button v-if="!user" class="bg-zinc-800 p-2 px-6 text-white rounded-lg">Se
                                 connecter</button>
 
-                            <button class=" bg-zinc-800  p-2 px-6 text-white
+                            <button v-if="!user" class=" bg-zinc-800  p-2 px-6 text-white
                                 rounded-lg">S'inscrire</button>
                         </div>
                     </div>
