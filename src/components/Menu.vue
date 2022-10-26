@@ -3,14 +3,14 @@
         <router-link to="/" class="text-3xl p-3 font-reemkufi text-35s text-light-dark">tik tak
         </router-link>
         <div class=" ">
-            <router-link class=" text-base font-outfit  text-light-dark font-medium mr-20" to="/configurateur">
+            <router-link class=" text-base font-outfit  text-light-dark font-semibold mr-20" to="/configurateur">
                 Customize
                 Your Pair
             </router-link>
-            <router-link class="   text-base font-outfit text-light-dark font-medium mr-20" to="/">
+            <router-link class="   text-base font-outfit text-light-dark font-medium mr-20" to="/notfound">
                 About
             </router-link>
-            <router-link class=" text-base font-outfit text-light-dark font-medium mr-20" to="/">
+            <router-link class=" text-base font-outfit text-light-dark font-medium mr-20" to="/notfound">
                 Collections</router-link>
             <router-link class=" text-base font-outfit text-light-dark font-medium mr-20" to="/signin">
                 Login / Logout</router-link>
