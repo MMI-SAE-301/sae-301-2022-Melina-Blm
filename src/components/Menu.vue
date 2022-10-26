@@ -1,23 +1,39 @@
 <template>
-    <div class="flex items-center justify-around flex-wrap m">
-        <router-link to="/" class="text-3xl p-3 font-reemkufi text-35s text-light-dark">tik tak
-        </router-link>
-        <div class=" ">
-            <router-link class=" text-base font-outfit  text-light-dark font-semibold mr-20" to="/configurateur">
-                Customize
-                Your Pair
+    <header>
+
+        <nav class="bg-white md:flex md:items-center md:justify-between">
+            <router-link to="/" class=" cursor-pointer text-3xl p-3 font-reemkufi text-35s text-light-dark">tik
+                tak
             </router-link>
-            <router-link class="   text-base font-outfit text-light-dark font-medium mr-20" to="/notfound">
-                About
-            </router-link>
-            <router-link class=" text-base font-outfit text-light-dark font-medium mr-20" to="/notfound">
-                Collections</router-link>
-            <router-link class=" text-base font-outfit text-light-dark font-medium mr-20" to="/signin">
-                Login / Logout</router-link>
-        </div>
-        <router-link class=" " to="/signin"> <img class="w-9" src="../assets/images/icon_profil.png" alt="">
-        </router-link>
-    </div>
+            <ul class="md:flex md:items-center md:z-auto md:static absolute bg-white ">
+                <li class="mx-6 my-6 md:my-0 ">
+                    <router-link class=" text-base font-outfit  text-light-dark  " to="/configurateur">
+                        Customize Your Pair</router-link>
+                </li>
+                <li class="mx-6 my-6 md:my-0">
+                    <router-link class=" text-base font-outfit  text-light-dark " to="/notfound">About
+                    </router-link>
+
+                </li>
+                <li class="mx-6 my-6 md:my-0">
+                    <router-link class=" text-base font-outfit  text-light-dark  " to="/notfound">
+                        Collections
+                    </router-link>
+
+                </li>
+                <li class="mx-6 my-6 md:my-0">
+                    <router-link class=" text-base font-outfit  text-light-dark font-semibold " to="/signin">Login /
+                        Logout
+                    </router-link>
+
+                </li>
+                <li class="mx-6 my-6 md:my-0 2xl:hidden">
+                    <img class="w-8" src="../assets/images/icon_profil.png" alt="">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
 
 </template>
 <style scoped>
