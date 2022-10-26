@@ -11,7 +11,7 @@ withDefaults(defineProps<Montres>(), {
 
 <template>
     <div>
-        <svg width="450" height="480" viewBox="0 0 450 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="250" height="280" viewBox="0 0 450 480" fill="none" xmlns="http://www.w3.org/2000/svg">
 
             <path id="boitier"
                 d="M212.132 245.159C169.332 106.759 194.299 58.1587 212.132 51.1587C231.132 41.6587 282.632 21.6587 364.132 51.1587C445.632 80.6587 446.132 263.659 446.132 270.159C441.632 361.659 277.132 327.159 275.132 327.159C233.132 316.659 215.132 255.659 212.132 245.159Z"
