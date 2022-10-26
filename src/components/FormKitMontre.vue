@@ -17,7 +17,7 @@ defineProps<{
         decorator: { $el: null },
     }" input-class="peer sr-only" options-class="flex gap-4 my-3">
         <template #label="context">
-            <div class="h-9 w-9 rounded-full border-4 peer-checked:border-blue-500"
+            <div class="h-9 w-9 rounded-full border-4 peer-checked:border-blue-500 hover:border-zinc-300"
                 :style="{ backgroundColor: context.option.value }">
             </div>
             <span class="sr-only">{{ context.option.label }}</span>
