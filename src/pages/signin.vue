@@ -4,6 +4,18 @@ import { supabase, user } from "../supabase";
 import { createClient } from '@supabase/supabase-js'
 
 
+async function signIn(data, node) {
+    const { user, error } = await (nvlUtilisateur.value
+        ? supabase.auth.signUp(data)
+        : supabase.auth.signIn(data));
+    if (error) {
+        console.error(error);
+        node.setErrors([error.message]);
+    }
+}
+const nvlUtilisateur = ref(false);
+
+
 </script>
 <template>
 
@@ -14,6 +26,7 @@ import { createClient } from '@supabase/supabase-js'
         <div class="flex justify-center mt-20 font-raleway">
             <section class=" text-center bg-white w-96 p-10 rounded-xl shadow-lg mb-20">
                 <div class="flex flex-col space-y-4">
+
                     <h3 class="font-reemkufi font-medium text-center text-dark-black p-5 text-lg ">
                         CONNEXION /
                         INSCRIPTION</h3>
@@ -24,15 +37,27 @@ import { createClient } from '@supabase/supabase-js'
                         class="text-dark-black bg-zinc-200 hover:bg-zinc-300  p-2 rounded-2xl">Continuer
                         avec
                         Google</button>
-                    <button class="text-white  bg-blue-600 hover:bg-blue-700 p-2 rounded-2xl">Continuer
+                    <button @pointerdown="supabase.auth.signIn({ provider: 'facebook' })"
+                        class="text-white  bg-blue-600 hover:bg-blue-700 p-2 rounded-2xl">Continuer
                         avec
                         Facebook</button>
+
                     <div class="flex justify-center">
                         <div class="space-x-3">
-                            <button class="bg-light-dark p-2 text-white rounded-lg">Se connecter</button>
-                            <!-- <button class="bg-light-dark p-2 text-white rounded-lg">S'inscrire</button>-->
+                            <button class="bg-zinc-800 p-2 px-6 text-white rounded-lg">Se
+                                connecter</button>
+
+                            <button class=" bg-zinc-800  p-2 px-6 text-white
+                                rounded-lg">S'inscrire</button>
                         </div>
                     </div>
+                    <div>
+                        <button class="bg-light-dark p-2 text-white rounded-lg" v-if="user"
+                            @pointerdown="supabase.auth.signOut()">
+                            Se déconnecter
+                        </button>
+                    </div>
+
 
                 </div>
 
