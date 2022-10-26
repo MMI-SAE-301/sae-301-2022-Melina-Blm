@@ -41,9 +41,9 @@
   <section class="bg-light-dark">
 
     <div class="flex justify-center flex-wrap gap-4 p-5">
-      <img class="w-[300px] mt-16 hover:border-4 border-white " src="../assets/images/watchplant.jpg"
+      <img class="w-[300px] mt-16 hover:border-2 border-gray-400 " src="../assets/images/watchplant.jpg"
         alt="Image d'une plante avec une montre">
-      <img class="w-[650px] mt-16 hover:border-4 border-white" src="../assets/images/woods.jpg"
+      <img class="w-[650px] mt-16 hover:border-2 border-gray-400" src="../assets/images/woods.jpg"
         alt="Image d'une femme en forêt">
     </div>
     <h3 class="text-40s font-reemkufi  tracking-widest text-white text-center mt-12">ECO-FRIENDLY &
@@ -54,7 +54,7 @@
       so. With the
       GoGreen program, Tik Tak
       ensures the eco-responsibility of its watches and products for you to enjoy. Ensuring comfort, quality and
-      eco-responsibility, you will be confident in your purchase, just like these customers were !</p>
+      eco-responsibility, you will be confident in your purchase, just like these customers were.</p>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 justify-around gap-8 p-10   font-raleway">
       <div class="bg-white p-4 rounded-xl">
