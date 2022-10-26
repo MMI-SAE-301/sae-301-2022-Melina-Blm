@@ -6,6 +6,8 @@ import { colors } from '@/types';
 import FormKitMontre from '@/components/FormKitMontre.vue'
 import { useRouter } from "vue-router";
 import { supabase } from '@/supabase';
+import FormMateriaux from '@/components/FormMateriaux.vue'
+import { materiaux } from '@/types';
 
 let user = supabase.auth.user()
 
@@ -36,15 +38,24 @@ if (props.id) {
 }
 </script>
 <template>
-    <div class="p-2">
-        <div class="w-64">
+    <div class="grid grid-cols-1 lg:grid-cols-2 justify-around gap-8 mx-20 my-10 rounded">
+        <div class="bg-white p-7 flex justify-center rounded-3xl shadow-lg">
+            <h2 class="font-reemkufi text-2xl text-center">PREVIEW</h2>
             <SvgMontre class="w-64" v-bind="montre" />
         </div>
-        <FormKit type="form" v-model="montre" @submit="upsertMontre">
+        <div class="bg-white p-7 rounded-3xl shadow-lg">
+            <h2 class="font-reemkufi text-2xl text-center ">CUSTOMISATION</h2>
+            <div class="font-reemkufi m-6 uppercase">
 
-            <FormKitMontre name="ecran" label="ecran" />
-            <FormKitMontre name="boitier" label="boitier" />
-            <FormKitMontre name="bracelet" label="bracelet" />
-        </FormKit>
+                <FormKit type="form" v-model="montre" @submit="upsertMontre">
+
+
+                    <FormKitMontre name="ecran" label="Screen -" />
+                    <FormKitMontre name="boitier" label="Case - " />
+                    <FormKitMontre name="bracelet" label="Bracelet -" />
+                    <FormMateriaux name="" label="Matériaux -" />
+                </FormKit>
+            </div>
+        </div>
     </div>
 </template>
