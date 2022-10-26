@@ -1,10 +1,7 @@
 <template>
   <nav>
     <MenuTikTak />
-
-
   </nav>
-
 
   <!-- Affiche les pages -->
   <Suspense>
