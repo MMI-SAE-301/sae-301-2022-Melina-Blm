@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/*PAGE DE CONNEXION - pour accéder aux contenus, l'utilisateur doit se connecter*/
 import { ref } from "@vue/reactivity";
 import { supabase, user } from "../supabase";
 import { createClient } from '@supabase/supabase-js'
@@ -38,8 +39,10 @@ const nvlUtilisateur = ref(false);
                         placeholder="E-mail..." />
                     <input v-if="!user" class="rounded-xl text-grey-dust border-zinc-200" type="password"
                         placeholder="Mot de passe" />
+
                     <button v-if="!user" @pointerdown="supabase.auth.signIn({ provider: 'google' })"
-                        class="text-dark-black bg-zinc-200 hover:bg-zinc-300  p-2 rounded-2xl">Continuer
+                        class="text-dark-black bg-zinc-200 hover:bg-zinc-300 text-center p-2 rounded-2xl"><img
+                            class="inline w-6   " src="../assets/images/google.png" alt="Png Google"> Continuer
                         avec
                         Google</button>
                     <button v-if="!user" @pointerdown="supabase.auth.signIn({ provider: 'facebook' })"

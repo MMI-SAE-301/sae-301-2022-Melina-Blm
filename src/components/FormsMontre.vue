@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/*FORMULAIRE DES MONTRES*/
 import type { Montres } from '@/types';
 import { ref } from 'vue';
 import SvgMontre from '@/components/SvgMontre.vue';
@@ -39,17 +40,21 @@ if (props.id) {
 </script>
 <template>
     <div class="grid grid-cols-1 lg:grid-cols-2 justify-around gap-8 mx-20 my-10 rounded">
-        <div class="bg-white p-7 flex justify-center rounded-3xl shadow-lg">
-            <h2 class="font-reemkufi text-2xl text-center">PREVIEW</h2>
-            <SvgMontre class="w-64" v-bind="montre" />
+        <div class="bg-white p-7  flex-wrap justify-center rounded-3xl shadow-lg">
+            <h2 class="font-reemkufi text-2xl text-center mb-6">PREVIEW</h2>
+            <SvgMontre class="w-64 text-center block m-auto" v-bind="montre" />
         </div>
         <div class="bg-white p-7 rounded-3xl shadow-lg">
             <h2 class="font-reemkufi text-2xl text-center ">CUSTOMISATION</h2>
             <div class="font-reemkufi m-6 uppercase">
 
-                <FormKit type="form" v-model="montre" @submit="upsertMontre">
-
-
+                <FormKit type="form" v-model="montre" @submit="upsertMontre" :config="{
+                    classes: {
+                        input: '',
+                        label: '',
+                    },
+                }"
+                    :submit-attrs="{ classes: { input: 'bg-blue-700 p-3 block m-auto my-4 hover:bg-blue-800 rounded-lg font-raleway text-white hover:bg-indigo-40' } }">
                     <FormKitMontre name="ecran" label="Screen -" />
                     <FormKitMontre name="boitier" label="Case - " />
                     <FormKitMontre name="bracelet" label="Bracelet -" />

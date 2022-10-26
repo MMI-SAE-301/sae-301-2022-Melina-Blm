@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/*Page 404 présente sur les pages "About" et "Collections"*/
 
 </script>
 <template>

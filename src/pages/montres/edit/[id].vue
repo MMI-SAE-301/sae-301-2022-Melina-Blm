@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/*RECAPITULATIF DE LACHAT*/
 import FormsMontre from "../../../components/FormsMontre.vue";
 
 defineProps<{
@@ -11,9 +12,11 @@ defineProps<{
         <h1 class="text-50s font-reemkufi font-semibold tracking-widest text-dark-black text-center">COMPLETED !
         </h1>
         <div class="flex justify-center gap-8 mt-7 ">
-            <router-link class="bg-blue-700 hover:bg-blue-800 p-4 rounded-2xl text-white font-raleway" to="/">HOME PAGE
+            <router-link class="bg-blue-700 font-medium hover:bg-blue-800 p-4 rounded-2xl text-white font-raleway"
+                to="/">HOME PAGE
             </router-link>
-            <router-link class="bg-blue-700 hover:bg-blue-800 p-4 rounded-2xl text-white font-ralewa" to="/">SIGN UP
+            <router-link class="bg-blue-700 font-medium hover:bg-blue-800 p-4 rounded-2xl text-white font-ralewa"
+                to="/signin">SIGN UP
             </router-link>
         </div>
         <FormsMontre :id="id" />
