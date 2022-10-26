@@ -27,7 +27,7 @@
     <div class="flex justify-center">
       <button
         class=" hover:animate-pulse bg-white p-6 text-sm rounded-full border-4 border-gray-200 shadow-xl font-reemkufi text-zinc-500">
-        <router-link to="/">CUSTOMIZE YOUR WATCH</router-link>
+        <router-link to="/configurateur">CUSTOMIZE YOUR WATCH</router-link>
       </button>
     </div>
     <h2 class="text-50s font-reemkufi font-semibold tracking-widest text-dark-black text-center mt-12">ECO-FRIENDLY</h2>
