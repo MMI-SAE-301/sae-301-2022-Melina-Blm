@@ -3,7 +3,7 @@
 - **Nom : Bouchelleghem
 - **Prénom : Mélina 
 - **URL maquette Figma: https://www.figma.com/file/4DgGs65jvmczltXB4wiTDC/sae301-maquette-melina-bouchelleghem?node-id=1%3A3
-- **URL publique du site :**
+- **URL publique du site : https://tiktak-watches.melinaweb.fr/
 - **URL projet Supabase : https://rimwowxryvwavdahhzcm.supabase.co
   - [X] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
@@ -14,7 +14,7 @@
 Vous avez rendu à la racine du projet :
 
 - [X] Le modèle conceptuel de données (nom : [MCD.png](/MCD.png) ou [MCD.pdf](/MCD.pdf) [^1])
-- [ ] Et compléter le fichier [bdd.sql](/bdd.sql) détaillant le code pour la création des tables, vues et policies créées
+- [X] Et compléter le fichier [bdd.sql](/bdd.sql) détaillant le code pour la création des tables, vues et policies créées
 - [X] Avez-vous bien invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase comme développeur ?
 
 ## R312 | Intégrer ([Pierre Pracht : AC 2401](https://moodle.univ-fcomte.fr/mod/assign/view.php?id=612668))
@@ -45,9 +45,9 @@ Noté sur 40.
   - Quelles techniques (Grilles Flex...)
     - ...
   - liens
-  - [ ] Mise en page fluide
+  - [X] Mise en page fluide
 - [ ] Mobile First (0-1-2pts)
-  - [ ] Plusieurs tailles
+  - [X] Plusieurs tailles
     - Lesquelles...
 - [ ] Dark Mode (0-1-2pts)
   - [ ] Simple usage de 'dark:'
@@ -55,7 +55,7 @@ Noté sur 40.
     - liens
 - "tailwin.config.js" (0-1-2pts)
   - [X] usage basique couleurs/fonts
-  - [ ] Comporte des données supplémentaires (utilisées !). Eg: "content-xxx", "bg-xxx", "grid-cols-xxx"...
+  - [X] Comporte des données supplémentaires (utilisées !). Eg: "content-xxx", "bg-xxx", "grid-cols-xxx"...
     - liens
 - Composants "accessibles" (0-1-2pts)
   - [X] textes "accessibles" (eg. 'sr-only')
