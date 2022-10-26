@@ -1,12 +1,35 @@
 <template>
 
-  <div class="">
+  <div class="relative">
     <img class="" src="../assets/images/landingwatch.jpg" alt="Image Landing Page">
 
+    <h1 class="absolute top-20 left-12 uppercase text-white font-reemkufi text-50s ">A new and
+      eco-friendly<br>
+      way for watches.</h1>
+    <p class="absolute top-[290px] left-12 text-white font-raleway max-w-md">Comfort. Lightness. Quality.
+      Eco-friendly.<br>
+      Our premium watches pack is inspired by the cold colors of Winter’s season collection. Tik Tak offers a very
+      large choice of eco-friendly watches in stores and on its online store. Our offer satisfies the whole
+      family.</p>
+
+    <p class="absolute top-[430px] left-12 text-white font-raleway max-w-md">For you and for us, we believe it's time to
+      move into a greener and eco-friendly area while still offering
+      revolutionary
+      needs to our customers.</p>
+    <button
+      class=" absolute top-[550px]  left-12 hover:animate-pulse bg-white p-6 text-sm rounded-full border-4 border-gray-200 shadow-xl font-reemkufi text-zinc-500">
+      <router-link to="/configurateur">CUSTOMIZE YOUR WATCH</router-link>
+    </button>
+    <div class=" flex items-center  gap-5 absolute top-[690px] left-12">
+      <img class="w-14" src="../assets/images/ecofriendly.png" alt="">
+      <p class="font-raleway text-white ">Tik Tak has been a committed company for many years, and has never stopped
+        moving the lines. With the GoGreen<br>
+        program, Tik Tak ensures the eco-responsibility of its watches and products for you to enjoy.</p>
+    </div>
   </div>
   <div class="bg-bg-grey">
-    <div class=" grid grid-cols-1 lg:grid-cols-2 justify-around gap-8 p-10">
-      <section class="flex-col p-10">
+    <div class=" grid grid-cols-1 lg:grid-cols-2 p-10 ">
+      <section class="flex-col ">
         <p class="font-reemkufi text-xl text-dark-black mt-2"> CHECK IT OUT !</p>
         <p class="font-raleway text-lg mt-4 ">New TikTak x Mihoko collection just launched out !<br>
           Make sure you get your hands on it before it’s too late.</p>
@@ -14,8 +37,8 @@
           alt="Image d'une montre">
       </section>
 
-      <section class="flex-col p-10 ">
-        <p class="font-reemkufi text-xl text-dark-black mt-2">NEW ECO-FRIENDLY DROP</p>
+      <section class="flex-col  ">
+        <p class="font-reemkufi text-xl text-dark-black mt-2 ">NEW ECO-FRIENDLY DROP</p>
         <p class="font-raleway text-lg mt-4">Get your hands on our newest drop !<br>
           10% off your order for the first 100 buyers.</p>
 
@@ -41,10 +64,8 @@
   <section class="bg-light-dark">
 
     <div class="flex justify-center flex-wrap gap-4 p-5">
-      <img class="w-[300px] mt-16 hover:border-2 border-gray-400 " src="../assets/images/watchplant.jpg"
-        alt="Image d'une plante avec une montre">
-      <img class="w-[650px] mt-16 hover:border-2 border-gray-400" src="../assets/images/woods.jpg"
-        alt="Image d'une femme en forêt">
+      <img class="w-[300px] mt-16" src="../assets/images/watchplant.jpg" alt="Image d'une plante avec une montre">
+      <img class="w-[650px] mt-16 " src="../assets/images/woods.jpg" alt="Image d'une femme en forêt">
     </div>
     <h3 class="text-40s font-reemkufi  tracking-widest text-white text-center mt-12">ECO-FRIENDLY &
       SUSTAINABILITY</h3>
