@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-around flex-wrap">
+    <div class="flex items-center justify-around flex-wrap m">
 
         <h1 class="text-3xl p-3 font-reemkufi text-35s text-light-dark">tik tak</h1>
         <div class=" ">
@@ -12,10 +12,11 @@
             </router-link>
             <router-link class="hover:font-semibold text-base font-outfit text-light-dark font-medium mr-20" to="/">
                 Collections</router-link>
-            <router-link class="hover:font-semibold text-base font-outfit text-light-dark font-medium mr-20" to="/">
+            <router-link class="hover:font-semibold text-base font-outfit text-light-dark font-medium mr-20"
+                to="/signin">
                 Sign In</router-link>
         </div>
-        <router-link class=" " to="/"> <img class="w-9" src="images/icon_profil.png" alt=""></router-link>
+        <router-link class=" " to="/"> <img class="w-9" src="../assets/images/icon_profil.png" alt=""></router-link>
     </div>
 
 </template>
