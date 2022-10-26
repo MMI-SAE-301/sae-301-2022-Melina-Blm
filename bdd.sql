@@ -26,6 +26,20 @@ PRIMARY KEY (id_materiel)
 
 --
 -- code pour la création des vues
+
+CREATE VIEW allMontre as
+SELECT *
+FROM "MONTRE"
+
+CREATE VIEW allMateriel as
+SELECT *
+FROM "MATERIEL"
+
+CREATE View allBracelet as 
+SELECT "MONTRES".*
+FROM "materiel", "montre"
+WHERE "materiel".id_materiel ="montre".id_materiel
+AND "materiel".libelle_materiel=''
 --
 
 
@@ -34,3 +48,8 @@ PRIMARY KEY (id_materiel)
 --
 -- code pour la création des policies
 --
+-- Au total 4 policies, 3 POUR MONTRE (INSERT,SELECT,UPDATE) ET 1 POUR MATERIEL (SELECT)
+--POLICY UPDATE 
+(uid() = id_user)
+(uid() IN ( SELECT "MONTRE_1".id_user
+   FROM "MONTRE" "MONTRE_1"))
