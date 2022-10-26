@@ -16,4 +16,4 @@ globalThis.supabase = supabase;
 export const user = ref(supabase.auth.user());
 supabase.auth.onAuthStateChange(() => {
   user.value = supabase.auth.user();
-});
+})

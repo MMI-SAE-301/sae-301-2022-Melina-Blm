@@ -14,7 +14,7 @@
                 Collections</router-link>
             <router-link class="hover:font-semibold text-base font-outfit text-light-dark font-medium mr-20"
                 to="/signin">
-                Sign In</router-link>
+                Login / Logout</router-link>
         </div>
         <router-link class=" " to="/"> <img class="w-9" src="../assets/images/icon_profil.png" alt=""></router-link>
     </div>
