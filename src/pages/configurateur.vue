@@ -7,14 +7,18 @@ import { user } from "../supabase"
 </script>
 <template>
     <section v-if="user">
-        <FormsMontre />
-
-        <h2>
-            un extrait de vos chaussures (<RouterLink class="text-red-600 underline" to="/">Toutes les voir
-            </RouterLink>
-            )
-        </h2>
-        <ListesMontres class="flex flex-wrap gap-2" :max="3" />
+        <h1 class="text-50s font-reemkufi font-semibold tracking-widest text-dark-black text-center mt-12">WATCHES</h1>
+        <div class="bg-bg-grey">
+            <h1 class="text-50s font-reemkufi font-semibold tracking-widest text-dark-black text-center">CUSTOMISATION
+            </h1>
+            <div class="">
+                <FormsMontre />
+            </div>
+            <div class="bg-white flex flex-col text-center rounded-2xl mx-16 shadow-lg p-6 flex-wrap ">
+                <h2 class="font-reemkufi text-2xl text-center m-7">PURCHASED PRODUCTS</h2>
+                <ListesMontres class="flex flex-wrap gap-14  justify-center" :max="3" />
+            </div>
+        </div>
     </section>
     <section v-if="!user">
 
@@ -25,7 +29,7 @@ import { user } from "../supabase"
 
             <div class="flex justify-center">
                 <div class="flex-col text-center font-raleway bg-white p-5  m-12 rounded-2xl ">
-                    <img class="w-12" src="../assets/images/error.png" alt="">
+                    <img class="w-12 ml-[90px] mb-3 animate-pulse" src="../assets/images/error.png" alt="">
                     <h2>Oh,oh..<br>Looks like
                         you're
                         not logged in !<span class="block font-semibold">Click on the button !</span>
@@ -38,9 +42,9 @@ import { user } from "../supabase"
                 </div>
             </div>
 
-
         </div>
     </section>
+
 
 
 </template>
