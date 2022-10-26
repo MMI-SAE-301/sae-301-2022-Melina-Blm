@@ -1,7 +1,7 @@
 <template>
     <div class="flex items-center justify-around flex-wrap m">
-
-        <h1 class="text-3xl p-3 font-reemkufi text-35s text-light-dark">tik tak</h1>
+        <router-link to="/" class="text-3xl p-3 font-reemkufi text-35s text-light-dark">tik tak
+        </router-link>
         <div class=" ">
             <router-link class=" text-base font-outfit hover:font-semibold text-light-dark font-medium mr-20" to="/">
                 Customize
