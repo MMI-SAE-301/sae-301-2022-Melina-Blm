@@ -19,6 +19,9 @@ const nvlUtilisateur = ref(false);
 </script>
 <template>
 
+
+
+
     <h1 class="text-50s font-reemkufi font-semibold tracking-widest text-dark-black text-center mt-12">TIK TAK</h1>
     <div class="bg-bg-grey">
         <h1 class="text-50s font-reemkufi font-semibold tracking-widest text-dark-black text-center">WATCHES FOR ALL
