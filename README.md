@@ -31,8 +31,8 @@ Noté sur 40.
 - Code et Commit (0-2-4-6pts)
 - Code HTML spécifiquement sémantique et accessible (0-1-2pts)
 
-- [ ] usage de Classes utilitaires (1pt)
-  - lien vers sa définition
+- [X] usage de Classes utilitaires (1pt)
+  - lien vers sa définition 
   - lien vers son usage
 - [X] Composants graphiques (0-1-2pts)
   - liens
@@ -46,19 +46,19 @@ Noté sur 40.
     - ...
   - liens
   - [X] Mise en page fluide
-- [ ] Mobile First (0-1-2pts)
+- [X] Mobile First (0-1-2pts)
   - [X] Plusieurs tailles
-    - Lesquelles...
+    - Lesquelles... SM,LG,MD
 - [ ] Dark Mode (0-1-2pts)
-  - [ ] Simple usage de 'dark:'
+  - [] Simple usage de 'dark:'
   - [ ] Mise en place avec usage de custom property pour les couleurs. Ou usage de DaisyUI AVEC thèmes perso
     - liens
-- "tailwin.config.js" (0-1-2pts)
+- "tailwind.config.js" (0-1-2pts)
   - [X] usage basique couleurs/fonts
   - [X] Comporte des données supplémentaires (utilisées !). Eg: "content-xxx", "bg-xxx", "grid-cols-xxx"...
     - liens
 - Composants "accessibles" (0-1-2pts)
   - [X] textes "accessibles" (eg. 'sr-only')
-  - [ ] Contenu accessible ET Usage de composants étudié pour accessibilité (Eg. HeadlessUI)
+  - [X] Contenu accessible ET Usage de composants étudié pour accessibilité (Eg. HeadlessUI)
 
 [^1]: Supprimez les mentions inutiles.
