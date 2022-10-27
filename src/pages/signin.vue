@@ -3,18 +3,27 @@
 import { ref } from "@vue/reactivity";
 import { supabase, user } from "../supabase";
 import { createClient } from '@supabase/supabase-js'
+import { useRouter } from "vue-router"
 
+const router = useRouter()
+const newUser = ref(false)
 
-async function signIn(data, node) {
-    const { user, error } = await (nvlUtilisateur.value
-        ? supabase.auth.signUp(data)
-        : supabase.auth.signIn(data));
+// @ts-ignore
+async function signUp(data, node) {
+    const { user, error } = await supabase.auth.signUp(data)
     if (error) {
         console.error(error);
         node.setErrors([error.message]);
     }
 }
-const nvlUtilisateur = ref(false);
+// @ts-ignore
+async function signIn(data, node) {
+    const { user, error } = await supabase.auth.signIn(data);
+    if (error) {
+        console.error(error);
+        node.setErrors([error.message]);
+    }
+}
 
 
 </script>
@@ -35,7 +44,7 @@ const nvlUtilisateur = ref(false);
                         CONNEXION /
                         INSCRIPTION</h3>
                     <p v-if="user">Vous êtes authentifié au nom de {{ user.user_metadata.full_name }}.</p>
-                    <input v-if="!user" class="rounded-xl text-grey-dust border-zinc-200 " type="email"
+                    <input v-if="!user" name="email" class="rounded-xl text-grey-dust border-zinc-200 " type="email"
                         placeholder="E-mail..." />
                     <input v-if="!user" class="rounded-xl text-grey-dust border-zinc-200" type="password"
                         placeholder="Mot de passe" />
@@ -64,10 +73,13 @@ const nvlUtilisateur = ref(false);
                             @pointerdown="supabase.auth.signOut()">
                             Se déconnecter
                         </button>
+
                     </div>
 
 
+
                 </div>
+
 
             </section>
         </div>

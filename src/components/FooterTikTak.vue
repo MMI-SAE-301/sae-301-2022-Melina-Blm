@@ -5,13 +5,14 @@
             <p>Privacy</p>
             <p>Cookies</p>
         </div>
-    
+
+
         <div class=" flex justify-center gap-11 p-6 flex-wrap ">
             <img class="w-10 h-10" src="../assets/images/Facebook.png" alt="">
             <img class="w-10 h-10" src="../assets/images/YouTube.png" alt="">
             <img class="w-10 h-10" src="../assets/images/linkedin.png" alt="">
         </div>
-    
+
     </footer>
 
 </template>

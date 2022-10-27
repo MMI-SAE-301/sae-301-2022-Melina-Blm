@@ -7,7 +7,7 @@ import { user } from "../supabase"
 
 </script>
 <template>
-    <section v-if="user">
+    <section class="" v-if="user">
         <h1 class="text-50s font-reemkufi font-semibold tracking-widest text-dark-black text-center mt-12">WATCHES</h1>
         <div class="bg-bg-grey">
             <h1 class="text-50s font-reemkufi font-semibold tracking-widest text-dark-black text-center">CUSTOMISATION
