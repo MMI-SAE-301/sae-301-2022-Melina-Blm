@@ -18,7 +18,7 @@ async function signUp(dataForm, node) {
     const { user, error } = await supabase.auth.signUp(data.value)
     if (error) {
         console.error(error);
-        node.setErrors([error.message]);
+        node.setErrors(["Please, insert your user information."]);
     }
 }
 // @ts-ignore
@@ -28,7 +28,7 @@ async function signIn(dataForm, node) {
     const { user, error } = await supabase.auth.signIn(data.value);
     if (error) {
         console.error(error);
-        node.setErrors([error.message]);
+        node.setErrors(["Please, insert your user information."]);
     } else {
         montreMsg.value = true;
     }
@@ -38,7 +38,7 @@ async function signIn(dataForm, node) {
 </script>
 <template>
 
-    <div v-if="montreMsg">Mesqage</div>
+
 
 
     <h1 class="text-50s font-reemkufi font-semibold tracking-widest text-dark-black text-center mt-12">TIK TAK</h1>
@@ -62,6 +62,7 @@ async function signIn(dataForm, node) {
                                 classes: { input: '', label: '', },
                             }" input-class="rounded-xl p-3 w-64 text-grey-dust border-zinc-200 mb-6" />
                         </div>
+
                         <div class="flex justify-center ">
                             <div class=" flex space-x-3">
                                 <FormKit type="form" submit-label="Se connecter" @submit="signIn" :config="{
