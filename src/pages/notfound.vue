@@ -21,8 +21,8 @@
                     you got lost again !<span class="block font-semibold">Click on the button to get to the home
                         page.</span>
                 </h2><br>
-                <div class="p-3 m-3 bg-blue-700 hover:bg-blue-800 text-white rounded-2xl">
-                    <router-link to="/"> HOME PAGE
+                <div class="p-3 m-3 bg-blue-700  hover:bg-blue-800 text-white rounded-2xl">
+                    <router-link to="/">Home Page
                     </router-link>
                 </div>
 
