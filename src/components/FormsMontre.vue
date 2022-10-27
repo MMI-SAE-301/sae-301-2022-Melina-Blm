@@ -48,7 +48,7 @@ if (props.id) {
             <h2 class="font-reemkufi text-2xl text-center ">CUSTOMISATION</h2>
             <div class="font-reemkufi m-6 uppercase">
 
-                <FormKit type="form" v-model="montre" @submit="upsertMontre" :config="{
+                <FormKit type="form" submit-label="Add to basket" v-model="montre" @submit="upsertMontre" :config="{
                     classes: {
                         input: '',
                         label: '',
