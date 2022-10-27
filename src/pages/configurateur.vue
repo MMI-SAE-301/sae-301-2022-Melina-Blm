@@ -17,7 +17,7 @@ import { user } from "../supabase"
             </div>
             <div class="bg-white flex flex-col text-center rounded-2xl mx-16 shadow-lg p-6 flex-wrap my-14">
                 <h2 class="font-reemkufi text-2xl text-center m-7">PURCHASED PRODUCTS</h2>
-                <ListesMontres class="flex flex-wrap gap-14  justify-center" :max="3" />
+                <ListesMontres class="flex flex-wrap gap-14  justify-center" :max="4" />
             </div>
         </div>
     </section>
@@ -29,7 +29,7 @@ import { user } from "../supabase"
             </h1>
 
             <div class="flex justify-center ">
-                <div class="flex-col text-center font-raleway bg-white p-5  m-12 rounded-2xl ">
+                <div class="flex-col text-center font-raleway bg-white shadow-md p-5  m-12 rounded-2xl ">
                     <img class="w-12 block m-auto mb-3 animate-pulse" src="../assets/images/error.png" alt="">
                     <h2>Oh,oh..<br>Looks like
                         you're
