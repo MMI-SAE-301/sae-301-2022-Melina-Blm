@@ -49,10 +49,10 @@ Noté sur 40.
 - [X] Mobile First (0-1-2pts)
   - [X] Plusieurs tailles
     - Lesquelles... SM,LG,MD
-- [ ] Dark Mode (0-1-2pts)
-  - [] Simple usage de 'dark:'
-  - [ ] Mise en place avec usage de custom property pour les couleurs. Ou usage de DaisyUI AVEC thèmes perso
-    - liens
+- [X] Dark Mode (0-1-2pts)
+  - [X] Simple usage de 'dark:'
+  - [X] Mise en place avec usage de custom property pour les couleurs. Ou usage de DaisyUI AVEC thèmes perso
+    - liens (bouton dark mode à activer sur la page app.vue pour les pages about et collections)
 - "tailwind.config.js" (0-1-2pts)
   - [X] usage basique couleurs/fonts
   - [X] Comporte des données supplémentaires (utilisées !). Eg: "content-xxx", "bg-xxx", "grid-cols-xxx"...
