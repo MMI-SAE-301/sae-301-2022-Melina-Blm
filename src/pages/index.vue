@@ -1,10 +1,10 @@
 <template>
   <!--Page d'accueil-->
   <header>
-    <div class="relative">
+    <div class="relative flex flew-wrap">
       <img class="" src="../assets/images/landingwatch.jpg" alt="Image Landing Page">
 
-      <h1 class="absolute top-10 left-12 uppercase text-white font-reemkufi text-50s ">A new and
+      <h1 class="absolute top-10 left-12 uppercase text-white font-reemkufi text-50s  ">A new and
         eco-friendly<br>
         way for watches.</h1>
       <p class="absolute top-[230px] left-12 text-white font-raleway max-w-md">Comfort. Lightness. Quality.
