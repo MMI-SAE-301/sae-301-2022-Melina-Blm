@@ -2,26 +2,35 @@
 /*PAGE DE CONNEXION - pour accéder aux contenus, l'utilisateur doit se connecter*/
 import { ref } from "@vue/reactivity";
 import { supabase, user } from "../supabase";
-import { createClient } from '@supabase/supabase-js'
+import type { UserCredentials } from '@supabase/supabase-js'
 import { useRouter } from "vue-router"
+
 
 const router = useRouter()
 const newUser = ref(false)
+const data = ref({})
+const montreMsg = ref(false)
 
 // @ts-ignore
-async function signUp(data, node) {
-    const { user, error } = await supabase.auth.signUp(data)
+async function signUp(dataForm, node) {
+    console.log('signup', data)
+    // @ts-ignore
+    const { user, error } = await supabase.auth.signUp(data.value)
     if (error) {
         console.error(error);
         node.setErrors([error.message]);
     }
 }
 // @ts-ignore
-async function signIn(data, node) {
-    const { user, error } = await supabase.auth.signIn(data);
+async function signIn(dataForm, node) {
+    console.log('signin', data)
+    // @ts-ignore
+    const { user, error } = await supabase.auth.signIn(data.value);
     if (error) {
         console.error(error);
         node.setErrors([error.message]);
+    } else {
+        montreMsg.value = true;
     }
 }
 
@@ -29,7 +38,7 @@ async function signIn(data, node) {
 </script>
 <template>
 
-
+    <div v-if="montreMsg">Mesqage</div>
 
 
     <h1 class="text-50s font-reemkufi font-semibold tracking-widest text-dark-black text-center mt-12">TIK TAK</h1>
@@ -44,10 +53,33 @@ async function signIn(data, node) {
                         CONNEXION /
                         INSCRIPTION</h3>
                     <p v-if="user">Vous êtes authentifié au nom de {{ user.user_metadata.full_name }}.</p>
-                    <input v-if="!user" name="email" class="rounded-xl text-grey-dust border-zinc-200 " type="email"
-                        placeholder="E-mail..." />
-                    <input v-if="!user" class="rounded-xl text-grey-dust border-zinc-200" type="password"
-                        placeholder="Mot de passe" />
+                    <FormKit type="form" v-if="!user" :actions="false" v-model="data">
+                        <div class="space-y-4 flex flex-col">
+                            <FormKit name="email" type="email" placeholder="E-mail..." :config="{
+                                classes: { input: '', label: '', },
+                            }" input-class="rounded-xl p-3 w-64 text-grey-dust border-zinc-200" />
+                            <FormKit name="password" type="password" placeholder="Mot de passe" :config="{
+                                classes: { input: '', label: '', },
+                            }" input-class="rounded-xl p-3 w-64 text-grey-dust border-zinc-200 mb-6" />
+                        </div>
+                        <div class="flex justify-center ">
+                            <div class=" flex space-x-3">
+                                <FormKit type="form" submit-label="Se connecter" @submit="signIn" :config="{
+                                    classes: { input: '', label: '', },
+                                }"
+                                    :submit-attrs="{ classes: { input: 'bg-zinc-700 hover:bg-zinc-800 border-2 p-2 px-6 text-white rounded-lg' } }" />
+                                <FormKit type="form" submit-label="S'inscrire" @submit="signUp" :config="{
+                                    classes: {
+                                        input: '',
+                                        label: '',
+                                    },
+                                }"
+                                    :submit-attrs="{ classes: { input: 'bg-zinc-700 border-2 hover:bg-zinc-800 p-2 px-6 text-white rounded-lg' } }" />
+
+
+                            </div>
+                        </div>
+                    </FormKit>
 
                     <button v-if="!user" @pointerdown="supabase.auth.signIn({ provider: 'google' })"
                         class="text-dark-black bg-zinc-200 hover:bg-zinc-300 text-center p-2 rounded-2xl"><img
@@ -59,15 +91,7 @@ async function signIn(data, node) {
                         avec
                         Facebook</button>
 
-                    <div class="flex justify-center">
-                        <div class="space-x-3">
-                            <button v-if="!user" class="bg-zinc-800 p-2 px-6 text-white rounded-lg">Se
-                                connecter</button>
 
-                            <button v-if="!user" class=" bg-zinc-800  p-2 px-6 text-white
-                                rounded-lg">S'inscrire</button>
-                        </div>
-                    </div>
                     <div>
                         <button class="bg-light-dark p-2 text-white rounded-lg" v-if="user"
                             @pointerdown="supabase.auth.signOut()">
