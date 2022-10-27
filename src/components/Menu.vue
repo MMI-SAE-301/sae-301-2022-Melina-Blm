@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { supabase, user } from "../supabase";
+import { createClient } from '@supabase/supabase-js'
+import { ref } from "@vue/reactivity";
+</script>
+
 <template>
     <header>
 
@@ -22,8 +28,15 @@
 
                 </li>
                 <li class="mx-6 my-6 md:my-0">
-                    <router-link class=" text-base font-outfit  text-light-dark font-semibold " to="/signin">Login /
+                    <router-link v-if="user"
+                        class=" bg-dark-black hover:shadow-md p-3 rounded-md text-base font-outfit  text-white font-semibold "
+                        to="/signin">
                         Logout
+                    </router-link>
+                    <router-link v-if="!user"
+                        class=" bg-dark-black hover:shadow-md p-3 rounded-md text-base font-outfit  text-white font-semibold "
+                        to="/signin">
+                        Login
                     </router-link>
 
                 </li>
