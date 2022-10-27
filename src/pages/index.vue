@@ -4,25 +4,25 @@
     <div class="relative">
       <img class="" src="../assets/images/landingwatch.jpg" alt="Image Landing Page">
 
-      <h1 class="absolute top-20 left-12 uppercase text-white font-reemkufi text-50s ">A new and
+      <h1 class="absolute top-10 left-12 uppercase text-white font-reemkufi text-50s ">A new and
         eco-friendly<br>
         way for watches.</h1>
-      <p class="absolute top-[290px] left-12 text-white font-raleway max-w-md">Comfort. Lightness. Quality.
+      <p class="absolute top-[230px] left-12 text-white font-raleway max-w-md">Comfort. Lightness. Quality.
         Eco-friendly.<br>
         Our premium watches pack is inspired by the cold colors of Winter’s season collection. Tik Tak offers a very
         large choice of eco-friendly watches in stores and on its online store. Our offer satisfies the whole
         family.</p>
 
-      <p class="absolute top-[430px] left-12 text-white font-raleway max-w-md">For you and for us, we believe it's time
+      <p class="absolute top-[390px] left-12 text-white font-raleway max-w-md">For you and for us, we believe it's time
         to
         move into a greener and eco-friendly area while still offering
         revolutionary
         needs to our customers.</p>
       <button
-        class=" absolute top-[550px]  left-12 hover:animate-pulse bg-white p-6 text-sm rounded-full border-4 border-gray-200 shadow-xl font-reemkufi text-zinc-500">
+        class=" absolute top-[500px]  left-12 hover:animate-pulse bg-white p-6 text-sm rounded-full border-4 border-gray-200 shadow-xl font-reemkufi text-zinc-500">
         <router-link to="/configurateur">CUSTOMIZE YOUR WATCH</router-link>
       </button>
-      <div class=" flex items-center  gap-5 absolute top-[690px] left-12">
+      <div class=" flex items-center  gap-5 absolute top-[630px] left-12">
         <img class="w-14" src="../assets/images/ecofriendly.png" alt="">
         <p class="font-raleway text-white ">Tik Tak has been a committed company for many years, and has never stopped
           moving the lines. With the GoGreen<br>

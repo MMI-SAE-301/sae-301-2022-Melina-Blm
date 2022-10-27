@@ -2,7 +2,6 @@
   <div :class="isDark ? 'dark' : ''">
     <nav>
       <MenuTikTak />
-
       <!--BOUTTON DARK MODE A ACTIVER SUR LA PAGE ABOUT ET COLLECTIONS
       <div>
         <button checked @click="isDark = !isDark">Dark Mode</button>
@@ -10,9 +9,6 @@
       </div>
       -->
     </nav>
-
-
-
     <!-- Affiche les pages -->
     <Suspense>
       <router-view class="m-2 border-2 p-2" />

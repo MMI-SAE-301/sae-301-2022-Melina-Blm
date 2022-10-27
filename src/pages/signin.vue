@@ -51,7 +51,7 @@ async function signIn(data, node) {
 
                     <button v-if="!user" @pointerdown="supabase.auth.signIn({ provider: 'google' })"
                         class="text-dark-black bg-zinc-200 hover:bg-zinc-300 text-center p-2 rounded-2xl"><img
-                            class="inline w-6   " src="../assets/images/google.png" alt="Png Google"> Continuer
+                            class="inline w-6 " src="../assets/images/google.png" alt="Png Google"> Continuer
                         avec
                         Google</button>
                     <button v-if="!user" @pointerdown="supabase.auth.signIn({ provider: 'facebook' })"
