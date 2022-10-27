@@ -1,7 +1,9 @@
 <template>
     <footer class="bg-neutral-900 border-t-2 border-zinc-600">
         <div class="font-raleway font-semibold text-white text-base flex justify-center gap-28 pt-36 pb-12 flex-wrap">
-            <p>Terms</p>
+            <router-link to="/mentionslegales">
+                <p>Terms</p>
+            </router-link>
             <p>Privacy</p>
             <p>Cookies</p>
         </div>
